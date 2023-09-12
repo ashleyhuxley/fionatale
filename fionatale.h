@@ -63,8 +63,8 @@ extern SDL_Color FT_COLOUR_WHITE;
 extern SDL_Color FT_COLOUR_GREY;
 extern SDL_Color FT_COLOUR_YELLOW;
 
-const int SCREEN_WIDTH = 640;
-const int SCREEN_HEIGHT = 480;
+const int SCREEN_WIDTH = 320;
+const int SCREEN_HEIGHT = 240;
 const int SCREEN_BPP = 32;
 
 extern TextureManager &texMgr;

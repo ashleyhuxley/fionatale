@@ -16,6 +16,7 @@
 #include "intro.h"
 #include <SDL/SDL_mixer.h>
 #include "musicmanager.h"
+#include <windows.h>
 
 using namespace std;
 
@@ -171,10 +172,8 @@ void parseArgs(int argc, char* args[])
 	}
 }
 
-int main (int argc, char* args[])
+int runApp()
 {
-	parseArgs(argc, args);
-
 	if (init() == false)
 	{
 		return -1;
@@ -202,4 +201,19 @@ int main (int argc, char* args[])
 	clean_up();
 
 	return 0;
+}
+
+int main (int argc, char* args[])
+{
+	parseArgs(argc, args);
+
+	return runApp();
+}
+
+int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
+{
+	// TODO: Parse command line args on Windows
+	isWindow = true;
+
+	runApp();
 }
