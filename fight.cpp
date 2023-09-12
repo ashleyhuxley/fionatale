@@ -121,9 +121,9 @@ int FightAction::fight()
 		}
 
 		if( fps.get_ticks() < 1000 / FRAMES_PER_SECOND )
-        {
-            SDL_Delay( ( 1000 / FRAMES_PER_SECOND ) - fps.get_ticks() );
-        }
+		{
+			SDL_Delay( ( 1000 / FRAMES_PER_SECOND ) - fps.get_ticks() );
+		}
 	}
 
 	string scoreStr = to_string(scores[0]) + " : " + to_string(scores[1]) + " : " + to_string(scores[2]);

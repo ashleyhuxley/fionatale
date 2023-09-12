@@ -10,22 +10,22 @@ using namespace std;
 
 class Soul
 {
-    private:
-	    int x, y;
-	    int xVel, yVel;
-	    TexturePtr soul;
+	private:
+		int x, y;
+		int xVel, yVel;
+		TexturePtr soul;
 
-	    bool hasDbgd;
-    
-    public:
-	    Soul();
-	    void handle_input(SDL_Event *event);
-	    void move();
-    	void show();
-    	bool hasCollidedWith(TexturePtr tex, int sx, int sy);
-    	bool hasCollidedWith(SDL_Surface *tex, int sx, int sy);
-    	void die();
-    	bool isMoving();
+		bool hasDbgd;
+	
+	public:
+		Soul();
+		void handle_input(SDL_Event *event);
+		void move();
+		void show();
+		bool hasCollidedWith(TexturePtr tex, int sx, int sy);
+		bool hasCollidedWith(SDL_Surface *tex, int sx, int sy);
+		void die();
+		bool isMoving();
 };
 
 const int OFFSET_X = 127;

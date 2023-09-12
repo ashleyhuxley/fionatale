@@ -10,7 +10,7 @@ libsdl-mixer1.2-dev
 libsdl-ttf2.0-dev
 
 
-## Compiling on Windows using MinGW and GCC
+## Compiling on Windows using MinGW
 
 Install GCC and the SDL libraries:
 

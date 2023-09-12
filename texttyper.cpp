@@ -111,8 +111,8 @@ void TextTyper::type(string text1, string text2, bool box)
 		}
 
 		if( fps.get_ticks() < 1000 / FRAMES_PER_SECOND )
-        {
-            SDL_Delay( ( 1000 / FRAMES_PER_SECOND ) - fps.get_ticks() );
-        }
+		{
+			SDL_Delay( ( 1000 / FRAMES_PER_SECOND ) - fps.get_ticks() );
+		}
 	}
 }

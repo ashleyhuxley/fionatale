@@ -64,13 +64,13 @@ bool init()
 	}
 
 	if( Mix_OpenAudio( 22050, MIX_DEFAULT_FORMAT, 1, 2048 ) == -1 )
-    {
-        return false;    
-    }
+	{
+		return false;	
+	}
 
-    Mix_Init(MIX_INIT_MP3);
+	Mix_Init(MIX_INIT_MP3);
 
-    stick = SDL_JoystickOpen( 0 );
+	stick = SDL_JoystickOpen( 0 );
 
 	SDL_ShowCursor(SDL_DISABLE);
 

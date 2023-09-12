@@ -87,7 +87,7 @@ bool Intro::drawCredits()
 bool Intro::drawCf()
 {
 	SDL_Surface *temp = SDL_DisplayFormat(screen);
-    SDL_BlitSurface(screen, NULL, temp, NULL);
+	SDL_BlitSurface(screen, NULL, temp, NULL);
 
 	for (int i = 0; i < 256; i++)
 	{

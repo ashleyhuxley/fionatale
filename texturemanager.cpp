@@ -14,7 +14,7 @@ TexturePtr TextureManager::load(const string &filename)
 	auto texIterator = loadedTextures.find(filename);
 	if (texIterator != loadedTextures.end())
 	{
-    	return texIterator->second;
+		return texIterator->second;
 	}
 
 	SDL_Surface* loadedImage = NULL;

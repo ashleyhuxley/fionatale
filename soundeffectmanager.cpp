@@ -14,7 +14,7 @@ SoundEffectPtr SoundManager::load(const string &filename)
 	auto texIterator = loadedEffects.find(filename);
 	if (texIterator != loadedEffects.end())
 	{
-    	return texIterator->second;
+		return texIterator->second;
 	}
 
 	Mix_Chunk* effect = NULL;

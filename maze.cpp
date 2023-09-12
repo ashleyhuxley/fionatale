@@ -19,15 +19,15 @@ bool Maze::fight()
 	animate_hitbox(screen);
 
 	SDL_Surface *temp = SDL_DisplayFormat(screen);
-    SDL_BlitSurface(screen, NULL, temp, NULL);
+	SDL_BlitSurface(screen, NULL, temp, NULL);
 
-    Timer fps;
-    Timer animate;
-    Timer coolOff;
+	Timer fps;
+	Timer animate;
+	Timer coolOff;
 
-    animate.start();
+	animate.start();
 
-    SDL_Event event;
+	SDL_Event event;
 
 	while (!done)
 	{

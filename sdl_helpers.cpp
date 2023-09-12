@@ -28,31 +28,31 @@ Uint8 get_event(SDL_Event *event)
 	{
 		if (event->jaxis.axis == 0)
 		{
-            if( ( event->jaxis.value < -8000 ) || ( event->jaxis.value > 8000 ) )
-            {
-                if( event->jaxis.value < 0 )
-                {
+			if( ( event->jaxis.value < -8000 ) || ( event->jaxis.value > 8000 ) )
+			{
+				if( event->jaxis.value < 0 )
+				{
 					return NES_LEFT;
-                }
-                else
-                {
+				}
+				else
+				{
 					return NES_RIGHT;
-                }
-            }
+				}
+			}
 		}
 		else
 		{
-            if( ( event->jaxis.value < -8000 ) || ( event->jaxis.value > 8000 ) )
-            {
-                if( event->jaxis.value < 0 )
-                {
+			if( ( event->jaxis.value < -8000 ) || ( event->jaxis.value > 8000 ) )
+			{
+				if( event->jaxis.value < 0 )
+				{
 					return NES_UP;
-                }
-                else
-                {
+				}
+				else
+				{
 					return NES_DOWN;
-                }
-            }
+				}
+			}
 		}
 	}
 	else if (event->type == SDL_JOYBUTTONDOWN)
@@ -171,16 +171,16 @@ void animate_hitbox(SDL_Surface *screen)
 		SDL_Flip(screen);
 
 		if( fps.get_ticks() < 1000 / FRAMES_PER_SECOND )
-        {
-            SDL_Delay( ( 1000 / FRAMES_PER_SECOND ) - fps.get_ticks() );
-        }
+		{
+			SDL_Delay( ( 1000 / FRAMES_PER_SECOND ) - fps.get_ticks() );
+		}
 	}
 }
 
 void fps_delay(int ticks)
 {
 	if( ticks < 1000 / FRAMES_PER_SECOND )
-    {
+	{
 		SDL_Delay( ( 1000 / FRAMES_PER_SECOND ) - ticks );
-    }
+	}
 }

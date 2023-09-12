@@ -145,42 +145,42 @@ void Fiona::slash()
 	TexturePtr bg = texMgr.load("assets/bg.png");
 	TexturePtr fen = texMgr.load("assets/fen.png");
 
-    SDL_Rect r;
-    int x = 20;
+	SDL_Rect r;
+	int x = 20;
 
-    for (int i = 0; i < 6; i++)
-    {
-    	bg->applyTo(0, 0, screen);
+	for (int i = 0; i < 6; i++)
+	{
+		bg->applyTo(0, 0, screen);
 		fen->applyTo(135, 3, screen);
 
-    	switch (i)
-    	{
-    		case 0: r.x = 18; r.y = 48; r.w = 6; r.h = 8; x = 20; break;
-    		case 1: r.x = 0; r.y = 44; r.w = 6; r.h = 24; x = 23; break;
-    		case 2: r.x = 0; r.y = 0; r.w = 8; r.h = 44; x = 23; break;
-    		case 3: r.x = 8; r.y = 0; r.w = 10; r.h = 66; x = 15; break;
-    		case 4: r.x = 18; r.y = 0; r.w = 16; r.h = 34; x = 51; break;
-    		case 5: r.x = 18; r.y = 34; r.w = 16; r.h = 14; x = 70; break;
-    	}
+		switch (i)
+		{
+			case 0: r.x = 18; r.y = 48; r.w = 6; r.h = 8; x = 20; break;
+			case 1: r.x = 0; r.y = 44; r.w = 6; r.h = 24; x = 23; break;
+			case 2: r.x = 0; r.y = 0; r.w = 8; r.h = 44; x = 23; break;
+			case 3: r.x = 8; r.y = 0; r.w = 10; r.h = 66; x = 15; break;
+			case 4: r.x = 18; r.y = 0; r.w = 16; r.h = 34; x = 51; break;
+			case 5: r.x = 18; r.y = 34; r.w = 16; r.h = 14; x = 70; break;
+		}
 
-	    slash->applyTo(157, x, screen, &r);
-	    SDL_Flip(screen);
-	    SDL_Delay(delay);
-    }
+		slash->applyTo(157, x, screen, &r);
+		SDL_Flip(screen);
+		SDL_Delay(delay);
+	}
 
-    for (int i = 0; i < 10; i++)
-    {
-    	int ox = rand() % 6;
-    	int oy = rand() % 6;
+	for (int i = 0; i < 10; i++)
+	{
+		int ox = rand() % 6;
+		int oy = rand() % 6;
 
-    	bg->applyTo(0, 0, screen);
+		bg->applyTo(0, 0, screen);
 		fen->applyTo(132 + ox, oy, screen);
 
 		SDL_Flip(screen);
-	    SDL_Delay(delay);
-    }
+		SDL_Delay(delay);
+	}
 
-    bg->applyTo(0, 0, screen);
+	bg->applyTo(0, 0, screen);
 	fen->applyTo(135, 3, screen);
 }
 
