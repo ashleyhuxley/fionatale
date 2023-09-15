@@ -8,6 +8,19 @@ Choose your weapon from one of four things that Fiona does not like. Fiona despi
 
 The object of the game is to work out how to spare Fiona by taking the correct sequence of actions, in true Undertale style. It is also possible to fight, and Fiona will attack the player using her two attacks - swiping with her paw, or screaming at the player - she's a Fennec after all!
 
+## Screenshots
+
+![The title screen of Fionatale](screenshots/title.png)
+
+![Entering the name of the player](screenshots/name.png)
+
+![The main part of the game](screenshots/fiona.png)
+
+![The paw swipe attack](screenshots/pawbat.png)
+
+![The screaming attack](screenshots/scream.png)
+
+
 ## Dependencies
 
 libsdl1.2-dev
