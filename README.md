@@ -1,6 +1,12 @@
 # fionatale
 
-A minigame based on UNDERTALE by Toby Fox. This game is designed to run on a Raspberry Pi with a 320 x 240 LCD display and a NES controller.
+A minigame based on UNDERTALE by Toby Fox. This game is designed to run on a Raspberry Pi with a 320 x 240 LCD display and a NES controller, although it will run on Linux and Windows and can be controlled using a keyboard (Arrow Keys + A, B and Space).
+
+Fionatale features my original character, Fiona Sapphire, as a character to beat in an Undertale style encounter.
+
+Choose your weapon from one of four things that Fiona does not like. Fiona despises hunting, so choosing the hunting horn will unlock hard mode. A mystery item can be unlocked using a particular sequence of key presses...
+
+The object of the game is to work out how to spare Fiona by taking the correct sequence of actions, in true Undertale style. It is also possible to fight, and Fiona will attack the player using her two attacks - swiping with her paw, or screaming at the player - she's a Fennec after all!
 
 ## Dependencies
 
